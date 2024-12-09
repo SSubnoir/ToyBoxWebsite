@@ -1,0 +1,118 @@
+.color_palette{
+    color: rgb(166, 142, 207);
+    color: rgb(125, 102, 164);
+    color: rgb(101,77,141);
+    color: rgb(76,72,67);
+    color: rgb(61,57,67);
+    color: rgb(47,44,53);
+    color: rgb(21,21,27);
+    color: rgb(207,207,207);
+}
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+html{
+    background-image: url("../img/block_atlas.webp");
+    background-repeat: repeat;
+    background-size: 35em;
+    /* background-image: linear-gradient(to bottom right, rgb(101,77,141), rgb(21,21,27)); */
+    background-color: rgb(21,21,27);
+}
+body{
+    margin: 0 0;
+    height: 100vh;
+    /* background-image: url(../img/particles.png);
+    background-repeat:repeat-y;
+    background-size: 11em; */
+}
+hr{
+    color: rgb(47,44,53);
+    border-color: rgb(47,44,53);
+    background-color: rgb(47,44,53);
+    margin: 0 0.5em;
+}
+header{
+    padding-top: 1em;
+    width: 100%;
+    height: 4em;
+    background-color: transparent;
+    display: block;
+}
+aside{
+    width: 13em;
+    min-height: calc(100% + 5.2em);
+    background-color: transparent;
+    display: block;
+    float: left;
+}
+.sidebar_container{
+    display: block;
+    position:fixed;
+}
+.sidebar_content{
+    width: 10.8em;
+    margin: 1em 1em;
+    display: block;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: rgb(207,207,207);
+    border-radius: 0.5em;
+    background-color: rgb(21,21,27);
+    box-shadow: rgb(21,21,27) 0.1em 0.1em 0.1em;
+}
+.sidebar_button{
+    width: 9.25em;
+    margin-left: 0.8em;
+    padding: 0.1em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    --initialTextColor: rgb(207,207,207);
+    --slideTextColor: rgb(21,21,27);
+    --initialBgColor: rgb(21,21,27);
+    --slideBgColor: rgb(125, 102, 164);
+
+    color: var(--initialTextColor);
+
+    background-image: linear-gradient(90deg,
+        var(--initialBgColor) 0%,
+        var(--initialBgColor) 50%,
+        var(--slideBgColor) 50%,
+        var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position .45s cubic-bezier(0.1, 0.25, 0.5, 1),
+      color .2s linear, border-color .3s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+.sidebar_button:hover{
+    color: var(--slideTextColor);
+    border-color: var(--slideTextColor);
+    cursor: pointer;
+    background-position: -100% 100%;
+}
+.button_link{
+    text-decoration: none;
+}
+main{
+    width: calc(100% - 13.6em);
+    min-height: 100%;
+    background-color: rgb(21,21,27);
+    border-style: solid;
+    border-color: rgb(207,207,207);
+    border-width: 0.1em 0 0 0.1em;
+    border-radius: 0.5em 0.5em 0 0.5em;
+    color: rgb(207,207,207);
+    display: block;
+    float: right;
+}
+footer{
+    padding: 0.5em 0em 0.5em 1em;
+}
+.text_link{
+    color: rgb(166, 142, 207);
+}
+.text_link:visited:hover,.text_link:hover{
+    color: rgb(125, 102, 164);
+}
+.text_link:visited{
+    color: rgb(101,77,141);
+}
