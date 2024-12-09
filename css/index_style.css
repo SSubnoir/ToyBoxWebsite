@@ -50,7 +50,7 @@
 .left_preview, .right_preview{
     height: fit-content;
     width: calc(100% - 6em);
-    padding: 0.5em 3em 2em;
+    padding: 0.5em 3em 6em;
 }
 .left_preview{
     text-align: left;
@@ -61,7 +61,6 @@
 .left_preview img, .right_preview img{
     width: 20em;
     height: 12em;
-    float: left;
 
     border-style: solid;
     border-width: 0.1em;
@@ -69,34 +68,39 @@
     border-radius: 0.5em;
     background-color: rgb(21,21,27);
     box-shadow: rgb(21,21,27) 0.1em 0.1em 0.1em;
+    display: inline-block;
 }
 .left_preview img{
     float: left;
+    margin-right: 1em;
 }
 .right_preview img{
     float: right;
+    margin-left: 1em;
 }
 .left_preview h2, .right_preview h2{
     font-size: 1.5em;
     font-family: 'Public Pixel', sans-serif;
     text-shadow: rgb(47,44,53) 0.1em 0.1em; 
     text-decoration: underline;
-    text-decoration-color: rgb(101,77,141);;
+    text-decoration-color: rgb(101,77,141);
+    display: inline;
 }
-.left_preview h2{
-    padding-left: 16em;
+/* .left_preview h2{
+    margin-left: 1em;
 }
 .right_preview h2{
-    padding-right: 16em;
-}
+    margin-right: 1em;
+} */
 .left_preview p, .right_preview p{
     font-size: 1.5em;
     text-shadow: rgb(47,44,53) 0.05em 0.05em;
     text-align: center;
+    display: inline;
 }
-.left_preview p{
-    padding-left: 15em;
+/* .left_preview p{
+    margin-left: 1em;
 }
 .right_preview p{
-    padding-right: 15em;
-}
+    margin-right: 1em;
+} */
