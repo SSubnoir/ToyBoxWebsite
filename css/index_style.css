@@ -11,14 +11,6 @@
     font-family: 'Public Pixel', sans-serif;
     text-shadow: rgb(47,44,53) 0.1em 0.1em; 
 }
-.section_heading{
-    width: 86%;
-    padding: 0 7%;
-    font-size: 4em;
-    text-align: center;
-    font-family: 'Public Pixel', sans-serif;
-    text-shadow: rgb(47,44,53) 0.1em 0.1em; 
-}
 .toybox_text{
     color: rgb(125, 102, 164);
 }

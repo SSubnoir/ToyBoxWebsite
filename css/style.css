@@ -37,6 +37,22 @@ header{
     background-color: transparent;
     display: block;
 }
+.section_heading{
+    width: 86%;
+    padding: 0 7%;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Public Pixel', sans-serif;
+    text-shadow: rgb(47,44,53) 0.1em 0.1em; 
+}
+.section_parag{
+    font-size: 1.5em;
+    text-shadow: rgb(47,44,53) 0.05em 0.05em;
+    text-align: center;
+    width: 86%;
+    height: fit-content;
+    padding: 0.001em 7%
+}
 aside{
     width: 13em;
     min-height: calc(100% + 5.2em);
@@ -112,6 +128,9 @@ footer{
 }
 .text_link:visited:hover,.text_link:hover{
     color: rgb(125, 102, 164);
+}
+.text_link:visited:hover img,.text_link:hover img{
+    border-color: rgb(125, 102, 164);
 }
 .text_link:visited{
     color: rgb(101,77,141);
